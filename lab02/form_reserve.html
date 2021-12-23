@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Form Demo</title>
+</head>
+
+<h3>Hotel Booking</h3>
+    <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+    <table height = "100%">
+
+    <tr>
+        <th align=left><label for="roomtype">room type</label></th>
+        <td>
+            <select name="roomtype">
+            <option value="0">Please Select</option>
+            <option value="Standard">Standard</option>
+            <option value="Laxury">Laxury</option>
+            <option value="Deluxe">Deluxe</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th align=left><label for="numog">Number of Guests</label></th>
+        <td>
+            <select name="numguest">
+            <option value="0">Please Select</option>
+            <option value="1-2">1-2</option>
+            <option value="3-4">3-4</option>
+            <option value="5-6">5-6</option>
+            <option value="7-8">7-8</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th align=left><label for="name">Name</label></th>
+        <td>
+            <input type="text" name="fname" placeholder= "FirstName">
+            <input type="text" name="lname" placeholder= "LastName">
+        </td>
+    </tr>
+
+    <tr>
+        <th align=left><label for="email">Email</label></th>
+        <td>
+            <input type="text" size= "46.5%" placeholder= "Burapha@gmail.com">          
+        </td>
+    </tr>
+
+    <tr>
+        <th align=left><label for="arrival">Arrival</label></th>
+        <td>
+            <input type="Date" name="arrivaldate" id="sex" value="M">
+            <input type="Time" name="arrivaltime" id="sex" value="F">
+        </td>
+    </tr>
+
+    <tr>
+        <th align=left><label for="dep">Departune</label></th>
+        <td>
+            <input type="Date" name="departuredate" id="sex" value="M">
+            <input type="Time" name="departuretime" id="sex" value="F">
+        </td>
+    </tr>
+
+    <tr>
+        <th align=left><label for="freepick">Free Pickup</label></th>
+        <td> 
+            <input type="radio" name="pickup" id="sex" value="Yes">Yes, Sure! <br>
+            <input type="radio" name="pickup" id="sex" value="No">No, I already rented a car. 
+        </td>    
+    </tr>
+
+    <tr>
+        <th align=left><label for="flight">Flight Number</label></th>
+        <td>
+            <input type="text" size= "46.5%" name="flightnum" placeholder= "C1209">          
+        </td>
+    </tr>
+
+    <tr>
+            <th align=left rowspan="2" >Other requests</th>
+            <td>
+                <Textarea name="otherreq" id="comment" rows="5" cols="40"></Textarea>
+            </td>
+    </tr>
+
+    <tr>
+            <td> <center><input type="submit" value="Complete Reservation"> </td>
+        </center>
+    </tr>
+
+    </table>
+    </form>
+</html>
